@@ -61,6 +61,7 @@ jobs:
         run: |
           brew install llvm lld ninja libarchive
           python3 -m pip install --break-system-packages meson
+          echo "$(brew --prefix llvm)/bin" >> "$GITHUB_PATH"
           echo "$(brew --prefix lld)/bin" >> "$GITHUB_PATH"
 
       - name: Install Rust iOS target
@@ -84,7 +85,18 @@ jobs:
             overlay/integration/bsd/darwin_host.c \
             -I overlay/integration/bsd
 
-      - name: Run upstream source checks
+      # check-native-libc.py inspects Meson-built archives such as
+      # build/libsmallclue.a. The upstream README requires a full Ninja build
+      # before running those checks; source-only does not mean build-free.
+      - name: Configure upstream Meson build
+        working-directory: source
+        run: meson setup build --buildtype=debugoptimized
+
+      - name: Build upstream native libraries and emulator
+        working-directory: source
+        run: ninja -C build
+
+      - name: Run upstream source and native-libc checks
         working-directory: source
         run: python3 tools/check-all.py --source-only
 
@@ -100,7 +112,7 @@ jobs:
             -configuration Release \
             -arch arm64 \
             -sdk iphoneos \
-            -derivedDataPath build \
+            -derivedDataPath build-xcode \
             ROOT_BUNDLE_IDENTIFIER=com.mrxz.termios \
             PRODUCT_NAME=Termi-iOS \
             INFOPLIST_KEY_CFBundleDisplayName=Termi-iOS \
@@ -113,7 +125,7 @@ jobs:
         working-directory: source
         run: |
           set -euo pipefail
-          APP_PATH=$(find build/Build/Products/Release-iphoneos -maxdepth 1 -type d -name '*.app' -print -quit)
+          APP_PATH=$(find build-xcode/Build/Products/Release-iphoneos -maxdepth 1 -type d -name '*.app' -print -quit)
           test -n "$APP_PATH"
           if [ "$GITHUB_REF" = "refs/heads/main" ]; then
             IPA_NAME="Termi-iOS-nightly.ipa"
