@@ -1,0 +1,149 @@
+name: Build Termi-iOS (unsigned IPA)
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      upstream_ref:
+        description: "iSH-AOK branch, tag, or commit to build"
+        required: true
+        default: "working"
+      release_tag:
+        description: "Release tag (for example v0.1.0)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: termi-ios-build-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 120
+    steps:
+      - name: Checkout Termi-iOS integration
+        uses: actions/checkout@v4
+        with:
+          path: overlay
+
+      - name: Checkout iSH-AOK source and submodules
+        uses: actions/checkout@v4
+        with:
+          repository: emkey1/ish-AOK
+          ref: ${{ inputs.upstream_ref || 'working' }}
+          submodules: recursive
+          fetch-depth: 0
+          path: source
+
+      - name: Initialize nested native-tool dependencies
+        working-directory: source
+        run: |
+          git -C deps/smallclue submodule update --init third-party/openssh third-party/nextvi third-party/libgit2
+
+      - name: Select Xcode
+        run: |
+          set -euo pipefail
+          XCODE=$(ls -d /Applications/Xcode_*.app 2>/dev/null | sort -V | tail -1)
+          if [ -z "$XCODE" ]; then
+            echo "No Xcode installation found on this runner"
+            exit 1
+          fi
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+
+      - name: Install build dependencies
+        run: |
+          brew install llvm lld ninja libarchive
+          python3 -m pip install --break-system-packages meson
+          echo "$(brew --prefix lld)/bin" >> "$GITHUB_PATH"
+
+      - name: Install Rust iOS target
+        run: rustup target add aarch64-apple-ios
+
+      - name: Build hterm distribution
+        working-directory: source/deps/libapps/hterm
+        run: python3 bin/mkdist
+
+      - name: Configure dash dependency
+        working-directory: source
+        run: |
+          if [ -f deps/dash/src/aok_mksignames.c ]; then
+            cd deps/dash
+            ../../tools/configure-dash.sh --quiet
+          fi
+
+      - name: Validate BSD host bridge source
+        run: |
+          xcrun --sdk iphoneos clang -target arm64-apple-ios15.0 -fsyntax-only \
+            overlay/integration/bsd/darwin_host.c \
+            -I overlay/integration/bsd
+
+      - name: Run upstream source checks
+        working-directory: source
+        run: python3 tools/check-all.py --source-only
+
+      - name: Build unsigned ARM64 iOS app
+        working-directory: source
+        env:
+          HELIX_DISABLE_AUTO_GRAMMAR_BUILD: "1"
+        run: |
+          set -euo pipefail
+          xcodebuild build \
+            -project iSH-AOK.xcodeproj \
+            -scheme iSH-AOK \
+            -configuration Release \
+            -arch arm64 \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            ROOT_BUNDLE_IDENTIFIER=com.mrxz.termios \
+            PRODUCT_NAME=Termi-iOS \
+            INFOPLIST_KEY_CFBundleDisplayName=Termi-iOS \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY=""
+
+      - name: Package unsigned IPA
+        id: package
+        working-directory: source
+        run: |
+          set -euo pipefail
+          APP_PATH=$(find build/Build/Products/Release-iphoneos -maxdepth 1 -type d -name '*.app' -print -quit)
+          test -n "$APP_PATH"
+          IPA_NAME="Termi-iOS-${GITHUB_SHA::7}.ipa"
+          rm -rf Payload "$IPA_NAME"
+          mkdir Payload
+          cp -R "$APP_PATH" Payload/
+          /usr/bin/zip -qry "$IPA_NAME" Payload
+          unzip -t "$IPA_NAME"
+          echo "ipa_name=$IPA_NAME" >> "$GITHUB_OUTPUT"
+
+      - name: Upload IPA build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Termi-iOS-unsigned-IPA
+          path: source/Termi-iOS-*.ipa
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Publish GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v') || (github.event_name == 'workflow_dispatch' && inputs.release_tag != '')
+        working-directory: source
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.release_tag || github.ref_name }}
+        run: |
+          set -euo pipefail
+          IPA_NAME=$(find . -maxdepth 1 -name 'Termi-iOS-*.ipa' -print -quit)
+          test -n "$IPA_NAME"
+          NOTES="Unsigned ARM64 iOS build of Termi-iOS. Built from emkey1/ish-AOK plus the Termi-iOS integration repository. No Apple signing identity is included."
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release upload "$RELEASE_TAG" "$IPA_NAME" --clobber
+          else
+            gh release create "$RELEASE_TAG" "$IPA_NAME" --title "Termi-iOS $RELEASE_TAG" --notes "$NOTES" --latest
+          fi
