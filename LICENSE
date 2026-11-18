@@ -1,0 +1,9 @@
+SPDX-License-Identifier: GPL-2.0-or-later
+
+Termi-iOS-specific source files in this repository are licensed under the
+GNU General Public License, version 2 or (at your option) any later version.
+
+This license notice does not replace, relicense, or remove the licenses and
+copyright notices of iSH-AOK, its dependencies, submodules, assets, or any
+other third-party material used in a build. Those components retain their
+own applicable licenses and notices.
