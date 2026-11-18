@@ -121,7 +121,6 @@ jobs:
             -sdk iphoneos \
             -derivedDataPath build-xcode \
             ROOT_BUNDLE_IDENTIFIER=com.mrxz.termios \
-            PRODUCT_NAME=Termi-iOS \
             INFOPLIST_KEY_CFBundleDisplayName=Termi-iOS \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
