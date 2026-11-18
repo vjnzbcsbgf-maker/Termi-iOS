@@ -2,14 +2,14 @@ name: Build Termi-iOS (unsigned IPA)
 
 on:
   push:
-    branches: [main]
+    branches: [main, 'fix/**']
     tags: ['v*']
   workflow_dispatch:
     inputs:
       upstream_ref:
         description: "iSH-AOK branch, tag, or commit to build"
         required: true
-        default: "working"
+        default: "74bb3fc6d99e33901853055013fa9fca9450197d"
       release_tag:
         description: "Release tag (for example v0.1.0)"
         required: false
@@ -36,7 +36,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: emkey1/ish-AOK
-          ref: ${{ inputs.upstream_ref || 'working' }}
+          ref: ${{ inputs.upstream_ref || '74bb3fc6d99e33901853055013fa9fca9450197d' }}
           submodules: recursive
           fetch-depth: 0
           path: source
@@ -45,6 +45,13 @@ jobs:
         working-directory: source
         run: |
           git -C deps/smallclue submodule update --init third-party/openssh third-party/nextvi third-party/libgit2
+
+      - name: Apply Termi-iOS native libc routing patch
+        run: |
+          set -euo pipefail
+          python3 overlay/scripts/patch-upstream-native-libc.py
+          git -C source diff --check
+          git -C source diff --stat
 
       - name: Select Xcode
         run: |
