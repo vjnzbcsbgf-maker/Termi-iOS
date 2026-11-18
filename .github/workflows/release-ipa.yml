@@ -115,7 +115,11 @@ jobs:
           set -euo pipefail
           APP_PATH=$(find build/Build/Products/Release-iphoneos -maxdepth 1 -type d -name '*.app' -print -quit)
           test -n "$APP_PATH"
-          IPA_NAME="Termi-iOS-${GITHUB_SHA::7}.ipa"
+          if [ "$GITHUB_REF" = "refs/heads/main" ]; then
+            IPA_NAME="Termi-iOS-nightly.ipa"
+          else
+            IPA_NAME="Termi-iOS-${GITHUB_SHA::7}.ipa"
+          fi
           rm -rf Payload "$IPA_NAME"
           mkdir Payload
           cp -R "$APP_PATH" Payload/
@@ -132,11 +136,11 @@ jobs:
           retention-days: 14
 
       - name: Publish GitHub Release
-        if: startsWith(github.ref, 'refs/tags/v') || (github.event_name == 'workflow_dispatch' && inputs.release_tag != '')
+        if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v') || (github.event_name == 'workflow_dispatch' && inputs.release_tag != '')
         working-directory: source
         env:
           GH_TOKEN: ${{ github.token }}
-          RELEASE_TAG: ${{ inputs.release_tag || github.ref_name }}
+          RELEASE_TAG: ${{ inputs.release_tag || (github.ref == 'refs/heads/main' && 'nightly') || github.ref_name }}
         run: |
           set -euo pipefail
           IPA_NAME=$(find . -maxdepth 1 -name 'Termi-iOS-*.ipa' -print -quit)
