@@ -6,7 +6,7 @@ fails CI rather than silently producing a partially patched binary.
 """
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2] / "source"
 
 
 def replace_once(path: str, old: str, new: str) -> None:
