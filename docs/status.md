@@ -17,3 +17,7 @@ This page is deliberately conservative. A feature is not considered implemented 
 ## Current prototype boundary
 
 `integration/bsd/darwin_host.c` is a small host adapter using public POSIX/Darwin interfaces. It is not linked into iSH-AOK yet and does not execute BSD binaries. The CI workflow performs a compile-only check so that the API surface remains buildable against the iOS SDK.
+
+## CI build ordering
+
+The release workflow configures the upstream Meson build and runs `ninja -C build` before `tools/check-all.py --source-only`, because the native-libc check inspects generated static archives. Xcode DerivedData uses a separate `build-xcode` directory to avoid colliding with Meson's `build` directory. A successful IPA and release are still pending a green Actions run.
