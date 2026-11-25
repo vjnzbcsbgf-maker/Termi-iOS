@@ -1,0 +1,375 @@
+{
+  "format": "ios-hub-source-selection-v1",
+  "name": "LiveContainer Mega Source",
+  "generatedAt": "2026-11-25T03:55:51.102Z",
+  "installer": "livecontainer",
+  "installerName": "LiveContainer",
+  "shortcut": "LiveContainer Mega Source Import",
+  "sources": [
+    {
+      "id": "utm",
+      "name": "UTM Repository",
+      "url": "https://alt.getutm.app/"
+    },
+    {
+      "id": "provenance",
+      "name": "Provenance Emulator",
+      "url": "https://provenance-emu.com/apps.json"
+    },
+    {
+      "id": "ish",
+      "name": "iSH",
+      "url": "https://ish.app/altstore.json"
+    },
+    {
+      "id": "flycast",
+      "name": "Flycast",
+      "url": "https://flyinghead.github.io/flycast-builds/altstore.json"
+    },
+    {
+      "id": "sidestore-community",
+      "name": "SideStore Community",
+      "url": "https://community-apps.sidestore.io/sidecommunity.json"
+    },
+    {
+      "id": "sidestore-official",
+      "name": "SideStore Official",
+      "url": "https://apps.sidestore.io/"
+    },
+    {
+      "id": "stikdebug",
+      "name": "StikDebug",
+      "url": "https://stikdebug.xyz/index.json"
+    },
+    {
+      "id": "livecontainer",
+      "name": "LiveContainer Stable",
+      "url": "https://github.com/LiveContainer/LiveContainer/releases/download/1.0/apps.json"
+    },
+    {
+      "id": "livecontainer-nightly",
+      "name": "LiveContainer Nightly",
+      "url": "https://github.com/LiveContainer/LiveContainer/releases/download/nightly/apps_nightly.json"
+    },
+    {
+      "id": "manicemu",
+      "name": "Manic EMU",
+      "url": "https://apps.manicemu.site/altstore"
+    },
+    {
+      "id": "flycast-ios",
+      "name": "Flycast iOS",
+      "url": "https://github.com/chachillie/Flycast-iOS/raw/refs/heads/main/flycast-ios.json"
+    },
+    {
+      "id": "geode-ios",
+      "name": "Geode iOS",
+      "url": "https://ios-repo.geode-sdk.org/altsource/main.json"
+    },
+    {
+      "id": "retrosekai",
+      "name": "RetroSekaï",
+      "url": "https://repo.untitledcharts.com"
+    },
+    {
+      "id": "oatmealdome",
+      "name": "OatmealDome",
+      "url": "https://altstore.oatmealdome.me"
+    },
+    {
+      "id": "crystall1ne",
+      "name": "crystall1ne",
+      "url": "https://alt.crystall1ne.dev"
+    },
+    {
+      "id": "pokemmo",
+      "name": "PokeMMO",
+      "url": "https://pokemmo.eu/altstore/"
+    },
+    {
+      "id": "odyssey",
+      "name": "Odyssey",
+      "url": "https://theodyssey.dev/altstore/odysseysource.json"
+    },
+    {
+      "id": "yattee",
+      "name": "Yattee",
+      "url": "https://raw.githubusercontent.com/yattee/yattee/main/altstore-source.json"
+    },
+    {
+      "id": "ignited",
+      "name": "Ignited",
+      "url": "https://altstore.ignitedemulator.com/"
+    },
+    {
+      "id": "mona",
+      "name": "Mona",
+      "url": "https://raw.githubusercontent.com/delia-cheminot/mona-hrt/refs/heads/main/ios_source.json"
+    },
+    {
+      "id": "vortx",
+      "name": "VortX",
+      "url": "https://raw.githubusercontent.com/VortXTV/VortX/main/altstore/source.json"
+    },
+    {
+      "id": "stremio-ios",
+      "name": "Stremio iOS Source",
+      "url": "https://gorlev.github.io/stremio-altstore/stremio-ios.json"
+    },
+    {
+      "id": "kodi-ios",
+      "name": "Kodi iOS IPA",
+      "url": "https://github.com/ohaiibuzzle/kodi-ios-ipa-builds/releases/latest/download/source.json"
+    },
+    {
+      "id": "partyknights",
+      "name": "Party Knights",
+      "url": "https://partyknights.app/source"
+    },
+    {
+      "id": "itorrent",
+      "name": "iTorrent",
+      "url": "https://xitrix.github.io/iTorrent/AltStore.json"
+    },
+    {
+      "id": "qbitconnect",
+      "name": "qBitConnect",
+      "url": "https://raw.githubusercontent.com/RajnishOne/altstore-releases/main/altstore.json"
+    },
+    {
+      "id": "artemis",
+      "name": "Artemis",
+      "url": "https://raw.githubusercontent.com/auties00/artemis/refs/heads/main/source.json"
+    },
+    {
+      "id": "wayfarer",
+      "name": "Niantic Wayfarer",
+      "url": "https://alts.lao.sb"
+    },
+    {
+      "id": "qbitcontrol",
+      "name": "qBitControl",
+      "url": "https://raw.githubusercontent.com/Michael-128/qBitControl-releases/main/source-classic.json"
+    },
+    {
+      "id": "xn1ckuz-sidebox",
+      "name": "xN1ckuz SideBox",
+      "url": "https://raw.githubusercontent.com/xN1ckuz/xN1ckuz-Sidestore-Repo/main/repo.json"
+    },
+    {
+      "id": "dvntm0-workshop",
+      "name": "Dan's Workshop",
+      "url": "https://raw.githubusercontent.com/dvntm0/AltStore/main/repo.json"
+    },
+    {
+      "id": "wuxu-library-plus",
+      "name": "WuXu's Library++",
+      "url": "https://raw.githubusercontent.com/WuXu1/WuXu1.github.io/main/wuxu-complete-plus.json"
+    },
+    {
+      "id": "baretsky-tweaked",
+      "name": "Baretsky Tweaked App Library",
+      "url": "https://raw.githubusercontent.com/baretsky/baretsky-tweaked-ipas-library/main/apps.json"
+    },
+    {
+      "id": "driftywinds",
+      "name": "driftywinds AltStore Repo",
+      "url": "https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/apps.json"
+    },
+    {
+      "id": "ipa-vault",
+      "name": "IPA Vault",
+      "url": "https://raw.githubusercontent.com/927tx/IPA-Vault/main/ipavaultsource.json"
+    },
+    {
+      "id": "sideloadlabs",
+      "name": "SideloadLabs Repo",
+      "url": "https://raw.githubusercontent.com/SideloadLabs/SideloasLabs-AltSource/main/apps.json"
+    },
+    {
+      "id": "ytliteplus",
+      "name": "YTLitePlus",
+      "url": "https://raw.githubusercontent.com/YTLitePlus/YTLitePlus-Altstore/main/apps.json"
+    },
+    {
+      "id": "moe-altstore",
+      "name": "Moe AltStore",
+      "url": "https://raw.githubusercontent.com/MountainofPenguin/moe-altstore/main/apps.json"
+    },
+    {
+      "id": "youmod-repo",
+      "name": "YouMod Repo",
+      "url": "https://raw.githubusercontent.com/MountainofPenguin/Altstore-Repository/main/apps.json"
+    },
+    {
+      "id": "youproextra",
+      "name": "YouProEXTRA",
+      "url": "https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/main/apps.json"
+    },
+    {
+      "id": "owo-source",
+      "name": "OwO Source",
+      "url": "https://repo.owo.network/"
+    },
+    {
+      "id": "youtuberebornplus",
+      "name": "YouTubeRebornPlus",
+      "url": "https://raw.githubusercontent.com/arichornlover/arichornlover.github.io/main/apps2.json"
+    },
+    {
+      "id": "apollo-reddit",
+      "name": "Apollo for Reddit",
+      "url": "https://raw.githubusercontent.com/Balackburn/Apollo/main/apps.json"
+    },
+    {
+      "id": "discord-appstore-builds",
+      "name": "Discord App Store Builds",
+      "url": "https://raw.githubusercontent.com/AlfaActa/discord-altstore-source/main/source.json"
+    },
+    {
+      "id": "ytkace",
+      "name": "YTKACE",
+      "url": "https://raw.githubusercontent.com/xKatsumi/YTKACE-SideStore-Repo/main/ytkace.json"
+    },
+    {
+      "id": "heyfordy",
+      "name": "heyFordy SideStore Repo",
+      "url": "https://raw.githubusercontent.com/Bitte-ein-Git/sidestore-repo/main/apps.json"
+    },
+    {
+      "id": "armsx2",
+      "name": "ARMSX2 iOS",
+      "url": "https://raw.githubusercontent.com/ARMSX2/Armsx2-Repo/main/apps.json"
+    },
+    {
+      "id": "fouad-source",
+      "name": "Fouad's Source",
+      "url": "https://raw.githubusercontent.com/FouadRaheb/Watusi-for-WhatsApp/master/altstore/source.json"
+    },
+    {
+      "id": "neofreebird",
+      "name": "NeoFreeBird",
+      "url": "https://raw.githubusercontent.com/orionblur/NeoFreeBird/v6/AltSource.json"
+    },
+    {
+      "id": "melonx",
+      "name": "MeloNX",
+      "url": "https://raw.githubusercontent.com/AzureDominus/melonx/refs/heads/XC-ios-ht/source.json"
+    },
+    {
+      "id": "altgallery",
+      "name": "AltGallery",
+      "url": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/all-apps.json"
+    },
+    {
+      "id": "ripestore",
+      "name": "RipeStore",
+      "url": "https://raw.githubusercontent.com/RipeStore/repos/main/RipeStore.json"
+    },
+    {
+      "id": "feather",
+      "name": "Feather Repository",
+      "url": "https://raw.githubusercontent.com/claration/Feather/main/app-repo.json"
+    },
+    {
+      "id": "quantum-source",
+      "name": "Quantum Source",
+      "url": "https://quarksources.github.io/quantumsource.json"
+    },
+    {
+      "id": "spotc",
+      "name": "SpotCompiled",
+      "url": "https://raw.githubusercontent.com/SpotCompiled/SpotC-AltStore-Repo/main/AltStore%20Repo.json"
+    },
+    {
+      "id": "foxster-altsource",
+      "name": "Foxster's AltSource",
+      "url": "https://therealfoxster.github.io/altsource/apps.json"
+    },
+    {
+      "id": "quantum-plus",
+      "name": "Quantum Source++",
+      "url": "https://quarksources.github.io/quantumsource++.json"
+    },
+    {
+      "id": "wuxu-standard",
+      "name": "WuXu's Library",
+      "url": "https://wuxu1.github.io/wuxu-complete.json"
+    },
+    {
+      "id": "taurine",
+      "name": "Taurine",
+      "url": "https://taurine.app/altstore/taurinestore.json"
+    },
+    {
+      "id": "burrito-source",
+      "name": "Burrito's Source",
+      "url": "https://burritosoftware.github.io/altstore/channels/burritosource.json"
+    },
+    {
+      "id": "salupov-altrepo",
+      "name": "Salupov Team AltRepo",
+      "url": "https://adp.salupovteam.com/altrepo.json"
+    },
+    {
+      "id": "cercube",
+      "name": "Cercube",
+      "url": "https://altstore.cercube.com"
+    },
+    {
+      "id": "rocket",
+      "name": "Rocket",
+      "url": "https://altstore.getrocketapp.io"
+    },
+    {
+      "id": "reynard-browser",
+      "name": "Reynard Browser",
+      "url": "https://github.com/minh-ton/reynard-browser/releases/download/0.0.1-a1/source.json"
+    },
+    {
+      "id": "altstore-official",
+      "name": "AltStore Official",
+      "url": "https://apps.altstore.io"
+    },
+    {
+      "id": "sidestore-connect",
+      "name": "SideStore Connect",
+      "url": "https://connect.sidestore.io/apps.json"
+    },
+    {
+      "id": "winston",
+      "name": "Winston for Reddit",
+      "url": "https://raw.githubusercontent.com/lo-cafe/winston-altstore/main/apps.json"
+    },
+    {
+      "id": "aidoku",
+      "name": "Aidoku Source",
+      "url": "https://raw.githubusercontent.com/Aidoku/Aidoku/altstore/apps.json"
+    },
+    {
+      "id": "mangayomi",
+      "name": "Mangayomi",
+      "url": "https://raw.githubusercontent.com/kodjodevf/mangayomi/refs/heads/main/repo/source.json"
+    },
+    {
+      "id": "anymex",
+      "name": "AnymeX",
+      "url": "https://raw.githubusercontent.com/RyanYuuki/AnymeX/refs/heads/main/repo/source.json"
+    },
+    {
+      "id": "animeko-openani",
+      "name": "OpenAni / Animeko",
+      "url": "https://raw.githubusercontent.com/maxchang3/ani-altstore-source/main/generated/apps.json"
+    },
+    {
+      "id": "nuvio",
+      "name": "Nuvio Official",
+      "url": "https://raw.githubusercontent.com/NuvioMedia/NuvioMobile/cmp-rewrite/store.json"
+    },
+    {
+      "id": "ryuksign",
+      "name": "RyukSign Repository",
+      "url": "https://raw.githubusercontent.com/faroukbmiled/RyukSign/refs/heads/main/app-repo.json"
+    }
+  ]
+}
