@@ -2,7 +2,7 @@
   "name": "LiveContainer Mega Source",
   "identifier": "com.mrxz.livecontainer.mega-source",
   "subtitle": "Combined iOS apps from multiple public AltStore-compatible sources",
-  "description": "A combined catalogue assembled from upstream public repositories. App metadata and IPA download URLs are provided by their respective maintainers.",
+  "description": "A large catalog of iOS apps from upstream releases and selected community sources. Newly added open-source apps link directly to their developers' GitHub release IPAs; modified/cracked third-party app builds are not added from this curated batch.",
   "iconURL": "https://wsrv.nl/?url=raw.githubusercontent.com%2Fvjnzbcsbgf-maker%2FTermi-iOS%2Fgh-pages%2Flogo.svg&output=png",
   "website": "https://github.com/vjnzbcsbgf-maker/Termi-iOS",
   "apps": [
@@ -2618,7 +2618,438 @@
           "size": 39544423
         }
       ]
+    },
+    {
+      "name": "Delta",
+      "bundleIdentifier": "com.rileytestut.Delta",
+      "developerName": "Riley Testut",
+      "subtitle": "All-in-one retro emulator (NES/SNES/N64/GBA/DS)",
+      "localizedDescription": "Delta is the official open-source successor to GBA4iOS. Supports NES, SNES, N64, Game Boy, Game Boy Advance and Nintendo DS with controller skins, save states, cheats and AirPlay. AGPL-3.0 licensed. Direct GitHub release — no patches.",
+      "iconURL": "https://github.com/RileyTestut.png",
+      "tintColor": "5CA9E6",
+      "version": "1.6",
+      "versionDate": "2024-07-11T01:08:23Z",
+      "versionDescription": "iPad support, brand new icon, melonDS 0.9.5, menu-button gestures. See https://github.com/RileyTestut/Delta/releases/tag/v1.6",
+      "downloadURL": "https://github.com/RileyTestut/Delta/releases/download/v1.6/Delta_1_6.ipa",
+      "size": 87734964,
+      "minOSVersion": "14.0",
+      "versions": [
+        {
+          "version": "1.6",
+          "date": "2024-07-11T01:08:23Z",
+          "localizedDescription": "iPad support, Handoff, melonDS 0.9.5, menu gestures. Full notes: https://github.com/RileyTestut/Delta/releases/tag/v1.6",
+          "downloadURL": "https://github.com/RileyTestut/Delta/releases/download/v1.6/Delta_1_6.ipa",
+          "size": 87734964
+        }
+      ],
+      "screenshotURLs": []
+    },
+    {
+      "name": "Provenance",
+      "bundleIdentifier": "org.provenance-emu.provenance",
+      "developerName": "Provenance Emu",
+      "subtitle": "Multi-system emulator frontend for iOS/tvOS",
+      "localizedDescription": "The most complete iOS/tvOS frontend - Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony systems via one app. Supports 3.3.0 with iCloud sync, revamped tvOS UI, video filters. Build config: org.provenance-emu.provenance. Wiki: https://wiki.provenance-emu.com",
+      "iconURL": "https://github.com/Provenance-Emu.png",
+      "tintColor": "2B4C7E",
+      "version": "3.3.0",
+      "versionDate": "2026-03-14T02:17:44Z",
+      "versionDescription": "Biggest release in 4 months: iCloud sync, tvOS redesign, video filters + core stability. https://github.com/Provenance-Emu/Provenance/releases/tag/3.3.0",
+      "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/3.3.0/Provenance-3.3.0-iOS.ipa",
+      "size": 1076407494,
+      "minOSVersion": "15.0",
+      "versions": [
+        {
+          "version": "3.3.0",
+          "date": "2026-03-14T02:17:44Z",
+          "localizedDescription": "iCloud sync, new tvOS interface, video filters. See release notes on GitHub.",
+          "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/3.3.0/Provenance-3.3.0-iOS.ipa",
+          "size": 1076407494
+        }
+      ],
+      "screenshotURLs": []
+    },
+    {
+      "name": "UTM",
+      "bundleIdentifier": "com.utmapp.UTM",
+      "developerName": "UTM Team (osy)",
+      "subtitle": "Virtual machines for iOS & macOS (QEMU)",
+      "localizedDescription": "Run Windows, Linux and other virtual machines on iOS. UTM 5.0.8 requires iOS 15 or later and adds improved touch controls and snapshots. This HV build requires JIT; use UTM SE if you do not have JIT.",
+      "iconURL": "https://github.com/utmapp.png",
+      "tintColor": "FF9500",
+      "version": "5.0.8",
+      "versionDate": "2026-10-17T02:44:56Z",
+      "versionDescription": "UTM v5.0.8 (2026-10-17). Stable upstream IPA. Release notes: https://github.com/utmapp/UTM/releases/tag/v5.0.8",
+      "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.8/UTM.ipa",
+      "size": 150556413,
+      "minOSVersion": "15.0",
+      "versions": [
+        {
+          "version": "5.0.8",
+          "date": "2026-10-17T02:44:56Z",
+          "localizedDescription": "Run Windows, Linux and other virtual machines on iOS. UTM 5.0.8 requires iOS 15 or later and adds improved touch controls and snapshots. This HV build requires JIT; use UTM SE if you do not have JIT.",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.8/UTM.ipa",
+          "size": 150556413
+        }
+      ],
+      "screenshotURLs": []
+    },
+    {
+      "name": "UTM SE",
+      "bundleIdentifier": "com.utmapp.UTM-SE",
+      "developerName": "UTM Team (osy)",
+      "subtitle": "UTM Slow Edition — no JIT required, App Store compliant",
+      "localizedDescription": "UTM Slow Edition runs virtual machines without JIT or a hypervisor. UTM SE 5.0.8 requires iOS 15 or later; it is slower than the HV build but does not need a JIT enabler.",
+      "iconURL": "https://github.com/utmapp.png",
+      "tintColor": "FF9500",
+      "version": "5.0.8",
+      "versionDate": "2026-10-17T02:44:56Z",
+      "versionDescription": "UTM SE v5.0.8 (2026-10-17). Stable no-JIT IPA. Release notes: https://github.com/utmapp/UTM/releases/tag/v5.0.8",
+      "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.8/UTM-SE.ipa",
+      "size": 237108214,
+      "minOSVersion": "15.0",
+      "versions": [
+        {
+          "version": "5.0.8",
+          "date": "2026-10-17T02:44:56Z",
+          "localizedDescription": "UTM Slow Edition runs virtual machines without JIT or a hypervisor. UTM SE 5.0.8 requires iOS 15 or later; it is slower than the HV build but does not need a JIT enabler.",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.8/UTM-SE.ipa",
+          "size": 237108214
+        }
+      ],
+      "screenshotURLs": []
+    },
+    {
+      "name": "PPSSPP",
+      "bundleIdentifier": "org.ppsspp.ppsspp-free",
+      "developerName": "Henrik Rydgard",
+      "subtitle": "PSP emulator (iOS, Android, Desktop)",
+      "localizedDescription": "The premiere PSP emulator - play your PSP ISOs on iOS with Vulkan/Metal, save states, networking and cheats. GPL-2.0+. Bundle ID org.ppsspp.ppsspp-free verified from ios/PPSSPP-Info.plist. 1.20.4 is latest iOS IPA.",
+      "iconURL": "https://github.com/hrydgard.png",
+      "tintColor": "1ABC9C",
+      "version": "1.20.4",
+      "versionDate": "2026-05-16T12:35:08Z",
+      "versionDescription": "https://github.com/hrydgard/ppsspp/releases/tag/v1.20.4",
+      "downloadURL": "https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-iOS-v1.20.4.ipa",
+      "size": 31124277,
+      "minOSVersion": "12.0",
+      "versions": [
+        {
+          "version": "1.20.4",
+          "date": "2026-05-16T12:35:08Z",
+          "localizedDescription": "Latest stable PPSSPP for iOS.",
+          "downloadURL": "https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-iOS-v1.20.4.ipa",
+          "size": 31124277
+        }
+      ],
+      "screenshotURLs": []
+    },
+    {
+      "name": "Pocket8",
+      "bundleIdentifier": "com.jevon.pocket8",
+      "developerName": "Jevon Lipsey",
+      "subtitle": "Open-source PICO-8 cartridge player for iOS",
+      "localizedDescription": "Native iOS companion/runtime for PICO-8 cartridges, with a local library, touch controls and save states. Requires cartridges you provide; compatible with SideStore/AltStore. GPL-3.0. Minimum iOS 15.0.",
+      "iconURL": "https://github.com/jevonlipsey.png",
+      "tintColor": "FF9500",
+      "version": "1.6.2",
+      "versionDate": "2026-01-22T23:33:34Z",
+      "versionDescription": "Pocket8 v1.6.2 (2026-01-22), fixes the BBS button on iOS. Release: https://github.com/jevonlipsey/pico-ios/releases/tag/v1.6.2",
+      "downloadURL": "https://github.com/jevonlipsey/pico-ios/releases/download/v1.6.2/pocket8.ipa",
+      "size": 19479747,
+      "minOSVersion": "15.0",
+      "versions": [
+        {
+          "version": "1.6.2",
+          "date": "2026-01-22T23:33:34Z",
+          "localizedDescription": "Native iOS companion/runtime for PICO-8 cartridges, with a local library, touch controls and save states. Requires cartridges you provide; compatible with SideStore/AltStore. GPL-3.0. Minimum iOS 15.0.",
+          "downloadURL": "https://github.com/jevonlipsey/pico-ios/releases/download/v1.6.2/pocket8.ipa",
+          "size": 19479747
+        }
+      ],
+      "screenshotURLs": []
+    },
+    {
+      "name": "iSH",
+      "bundleIdentifier": "app.ish.iSH",
+      "developerName": "ish-app (TBL)",
+      "subtitle": "Linux shell on iOS - Alpine via usermode x86 emulation",
+      "localizedDescription": "Alpine Linux shell for iOS. This is the latest official iSH IPA found, an automated pre-release build 813 (app version 1.3.3), not a stable release. It may contain development bugs.",
+      "iconURL": "https://github.com/ish-app.png",
+      "tintColor": "000000",
+      "version": "1.3.3",
+      "versionDate": "2026-08-22T06:20:14Z",
+      "versionDescription": "PRE-RELEASE automated daily build 813 (2026-08-22), app version 1.3.3. Release: https://github.com/ish-app/ish/releases/tag/builds/813",
+      "downloadURL": "https://github.com/ish-app/ish/releases/download/builds/813/iSH.ipa",
+      "size": 4602446,
+      "minOSVersion": "11.0",
+      "versions": [
+        {
+          "version": "1.3.3",
+          "date": "2026-08-22T06:20:14Z",
+          "localizedDescription": "Alpine Linux shell for iOS. This is the latest official iSH IPA found, an automated pre-release build 813 (app version 1.3.3), not a stable release. It may contain development bugs.",
+          "downloadURL": "https://github.com/ish-app/ish/releases/download/builds/813/iSH.ipa",
+          "size": 4602446
+        }
+      ],
+      "screenshotURLs": []
+    },
+    {
+      "name": "StikDebug",
+      "bundleIdentifier": "com.stik.stikdebug",
+      "developerName": "StiKDebug (StikDebug)",
+      "subtitle": "On-device debugger & JIT enabler for iOS 17.4+",
+      "localizedDescription": "On-device debugger and JIT enabler for iOS 17.4+. Version 3.2.0 adds pairing-file creation and management for this device and external devices, including Apple TV.",
+      "iconURL": "https://github.com/StiKDebug.png",
+      "tintColor": "FF2D55",
+      "version": "3.2.0",
+      "versionDate": "2026-10-30T03:02:00Z",
+      "versionDescription": "StikDebug 3.2.0 (2026-10-30). Adds on-device pairing-file creation and management. Release: https://github.com/StiKDebug/StikDebug/releases/tag/3.2.0",
+      "downloadURL": "https://github.com/StiKDebug/StikDebug/releases/download/3.2.0/StikDebug-3.2.0.ipa",
+      "size": 16818331,
+      "minOSVersion": "17.4",
+      "versions": [
+        {
+          "version": "3.2.0",
+          "date": "2026-10-30T03:02:00Z",
+          "localizedDescription": "On-device debugger and JIT enabler for iOS 17.4+. Version 3.2.0 adds pairing-file creation and management for this device and external devices, including Apple TV.",
+          "downloadURL": "https://github.com/StiKDebug/StikDebug/releases/download/3.2.0/StikDebug-3.2.0.ipa",
+          "size": 16818331
+        }
+      ],
+      "screenshotURLs": []
+    },
+    {
+      "name": "Roam Control",
+      "bundleIdentifier": "com.roamcontrol",
+      "developerName": "Sean Howarth",
+      "subtitle": "Location testing and route simulation for developers",
+      "localizedDescription": "Developer/testing utility for simulating device locations and routes. Requires iOS 27 or later, Developer Mode and LocalDevVPN. Use only on devices and services you are authorized to test, and follow each service's rules. This is an unsigned upstream IPA; sign it with SideStore or another compatible installer.",
+      "iconURL": "https://github.com/seanhowarthdev.png",
+      "tintColor": "34C759",
+      "version": "0.9.9",
+      "versionDate": "2026-10-20T19:33:03Z",
+      "versionDescription": "Roam Control 0.9.9 build 105 (2026-10-20). Requires iOS 27+, Developer Mode and LocalDevVPN. Release: https://github.com/seanhowarthdev/Roam-Control/releases/tag/v0.9.9",
+      "downloadURL": "https://github.com/seanhowarthdev/Roam-Control/releases/download/v0.9.9/RoamControl-0.9.9-Build105.ipa",
+      "size": 4627321,
+      "minOSVersion": "27.0",
+      "versions": [
+        {
+          "version": "0.9.9",
+          "date": "2026-10-20T19:33:03Z",
+          "localizedDescription": "Developer/testing utility for simulating device locations and routes. Requires iOS 27 or later, Developer Mode and LocalDevVPN. Use only on devices and services you are authorized to test, and follow each service's rules. This is an unsigned upstream IPA; sign it with SideStore or another compatible installer.",
+          "downloadURL": "https://github.com/seanhowarthdev/Roam-Control/releases/download/v0.9.9/RoamControl-0.9.9-Build105.ipa",
+          "size": 4627321
+        }
+      ],
+      "screenshotURLs": []
+    },
+    {
+      "name": "Spotube",
+      "bundleIdentifier": "oss.krtirtho.spotube",
+      "developerName": "KRTirtho (Spotube)",
+      "subtitle": "Open-source Spotify client — no premium needed (SwiftUI/Flutter)",
+      "localizedDescription": "Spotube is a lightweight, privacy-friendly Spotify frontend that streams from YouTube Music / Piped — no Spotify premium required. SwiftUI/Flutter codebase, GPL-3.0 friendly, 48k+ stars. This iOS IPA is the official GitHub Release (Spotube-iOS.ipa). Newest value pick for 2026.",
+      "iconURL": "https://github.com/KRTirtho.png",
+      "tintColor": "1DB954",
+      "version": "5.1.2",
+      "versionDate": "2026-06-05T05:10:18Z",
+      "versionDescription": "Spotube v5.1.2 — open-source music streaming. https://github.com/KRTirtho/spotube/releases/tag/v5.1.2",
+      "downloadURL": "https://github.com/KRTirtho/spotube/releases/download/v5.1.2/Spotube-iOS.ipa",
+      "size": 34853093,
+      "minOSVersion": "14.0",
+      "versions": [
+        {
+          "version": "5.1.2",
+          "date": "2026-06-05T05:10:18Z",
+          "localizedDescription": "Open-source Spotify client with YouTube/Piped backend. No account needed.",
+          "downloadURL": "https://github.com/KRTirtho/spotube/releases/download/v5.1.2/Spotube-iOS.ipa",
+          "size": 34853093
+        }
+      ],
+      "screenshotURLs": []
+    },
+    {
+      "name": "PojavLauncher",
+      "bundleIdentifier": "net.kdt.pojavlauncher",
+      "developerName": "PojavLauncherTeam",
+      "subtitle": "Minecraft: Java Edition on iOS (Swift/ObjC + Java)",
+      "localizedDescription": "Run Minecraft Java Edition natively on iOS — full Java runtime, mod & Fabric/Forge support, touch controls and controller. GPL-3.0. Successor Amethyst-iOS is in dev, but this 2.2 IPA (2023-05-06) remains the last stable sideloadable build and still brings unique value. Requires JIT for best performance (pair with StikDebug).",
+      "iconURL": "https://github.com/PojavLauncherTeam.png",
+      "tintColor": "62B47A",
+      "version": "2.2",
+      "versionDate": "2023-05-06T20:56:25Z",
+      "versionDescription": "PojavLauncher iOS v2.2 — Minecraft Java on iOS. https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases/tag/v2.2",
+      "downloadURL": "https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases/download/v2.2/net.kdt.pojavlauncher-2.2-ios.ipa",
+      "size": 108175347,
+      "minOSVersion": "14.0",
+      "versions": [
+        {
+          "version": "2.2",
+          "date": "2023-05-06T20:56:25Z",
+          "localizedDescription": "Minecraft Java Edition launcher for iOS — mods, shaders, multiplayer.",
+          "downloadURL": "https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases/download/v2.2/net.kdt.pojavlauncher-2.2-ios.ipa",
+          "size": 108175347
+        }
+      ],
+      "screenshotURLs": []
+    },
+    {
+      "name": "LBox",
+      "bundleIdentifier": "Lolendor.LBox",
+      "developerName": "Lolendor",
+      "subtitle": "SwiftUI repo manager for LiveContainer (NEW 2025)",
+      "localizedDescription": "LBox is a native SwiftUI companion for LiveContainer — browse public sources, search and download IPAs, and install/launch apps directly on device with seamless LiveContainer integration. MIT, fully SwiftUI, newest value app on the source (v1.2 — 2025-12-08). Perfect pairing with LiveContainer + SideStore.",
+      "iconURL": "https://github.com/Lolendor.png",
+      "tintColor": "5856D6",
+      "version": "1.2",
+      "versionDate": "2025-12-08T02:13:43Z",
+      "versionDescription": "LBox v1.2 — SwiftUI LiveContainer source browser. https://github.com/Lolendor/LBox/releases/tag/v1.2",
+      "downloadURL": "https://github.com/Lolendor/LBox/releases/download/v1.2/LBox.ipa",
+      "size": 614768,
+      "minOSVersion": "15.0",
+      "versions": [
+        {
+          "version": "1.2",
+          "date": "2025-12-08T02:13:43Z",
+          "localizedDescription": "SwiftUI repository manager for LiveContainer — browse, download and launch IPAs.",
+          "downloadURL": "https://github.com/Lolendor/LBox/releases/download/v1.2/LBox.ipa",
+          "size": 614768
+        }
+      ],
+      "screenshotURLs": []
+    },
+    {
+      "name": "Cowabunga",
+      "bundleIdentifier": "com.leemin.Cowabunga",
+      "developerName": "leminlimez",
+      "subtitle": "iOS 14-16.1.2 MacDirtyCow toolbox — themes, tweaks, no jailbreak",
+      "localizedDescription": "Cowabunga is the legendary MacDirtyCow toolbox for iOS 14.0-15.7.1 & 16.0-16.1.2: custom themes, icon theming, status bar tweaks, dock & folder mods and more without a jailbreak. GPL-3.0. v10.3.2 is the last stable IPA before KFD. A must-have for theming on supported versions.",
+      "iconURL": "https://github.com/leminlimez.png",
+      "tintColor": "30D158",
+      "version": "10.3.2",
+      "versionDate": "2023-05-29T20:49:25Z",
+      "versionDescription": "Cowabunga v10.3.2 — MacDirtyCow toolbox. https://github.com/leminlimez/Cowabunga/releases/tag/v10.3.2",
+      "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.2/Cowabunga.ipa",
+      "size": 16288960,
+      "minOSVersion": "14.0",
+      "versions": [
+        {
+          "version": "10.3.2",
+          "date": "2023-05-29T20:49:25Z",
+          "localizedDescription": "MacDirtyCow toolbox for iOS 14-16.1.2 — theming & system tweaks without jailbreak.",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.2/Cowabunga.ipa",
+          "size": 16288960
+        }
+      ],
+      "screenshotURLs": []
+    },
+    {
+      "name": "Misaka",
+      "bundleIdentifier": "com.straighttamago.misaka",
+      "developerName": "straight-tamago",
+      "subtitle": "iOS & tvOS customisation for KFD & MDC — successor to Cowabunga",
+      "localizedDescription": "Misaka is the modern successor to Cowabunga supporting both KFD (kfd) and MDC exploits for iOS & tvOS customisation: themes, tweaks, PiP, always-on-display and more. MIT, 2.7k stars. v8.2.4 (2024-01-20) is the latest stable sideloadable IPA — broader device support than Cowabunga.",
+      "iconURL": "https://github.com/straight-tamago.png",
+      "tintColor": "BF5AF2",
+      "version": "8.2.4",
+      "versionDate": "2024-01-20T04:49:47Z",
+      "versionDescription": "Misaka v8.2.4 — KFD & MDC customisation. https://github.com/straight-tamago/misaka/releases/tag/8.2.4",
+      "downloadURL": "https://github.com/straight-tamago/misaka/releases/download/8.2.4/misaka-v8.2.4.ipa",
+      "size": 30742697,
+      "minOSVersion": "15.0",
+      "versions": [
+        {
+          "version": "8.2.4",
+          "date": "2024-01-20T04:49:47Z",
+          "localizedDescription": "KFD & MDC customisation tool — themes, tweaks for iOS/tvOS.",
+          "downloadURL": "https://github.com/straight-tamago/misaka/releases/download/8.2.4/misaka-v8.2.4.ipa",
+          "size": 30742697
+        }
+      ],
+      "screenshotURLs": []
+    },
+    {
+      "name": "Paperback",
+      "bundleIdentifier": "com.paperback.ios",
+      "developerName": "Paperback-iOS",
+      "subtitle": "Manga reader — extensions, tracking & downloads",
+      "localizedDescription": "Paperback is a modern, SwiftUI manga/comic reader for iOS with extension-based sources, library tracking, offline downloads and reader customisation. 775 stars, active 2025-05-20 release. The go-to open-source Tachiyomi-style app for iOS. v0.8.11-r2 is the latest sideloadable IPA.",
+      "iconURL": "https://github.com/Paperback-iOS.png",
+      "tintColor": "FF9F0A",
+      "version": "0.8.11-r2",
+      "versionDate": "2025-05-20T13:56:35Z",
+      "versionDescription": "Paperback v0.8.11-r2. https://github.com/Paperback-iOS/app/releases/tag/v0.8.11-r2",
+      "downloadURL": "https://github.com/Paperback-iOS/app/releases/download/v0.8.11-r2/Paperback.ipa",
+      "size": 13597210,
+      "minOSVersion": "15.0",
+      "versions": [
+        {
+          "version": "0.8.11-r2",
+          "date": "2025-05-20T13:56:35Z",
+          "localizedDescription": "Manga reader with extensions — track, download and read offline.",
+          "downloadURL": "https://github.com/Paperback-iOS/app/releases/download/v0.8.11-r2/Paperback.ipa",
+          "size": 13597210
+        }
+      ],
+      "screenshotURLs": []
+    },
+    {
+      "name": "DebToIPA",
+      "bundleIdentifier": "net.sourceloc.DebToIPA",
+      "developerName": "sourcelocation",
+      "subtitle": "Convert .deb tweaks to .ipa on-device (SwiftUI)",
+      "localizedDescription": "DebToIPA converts jailbreak .deb packages into sideloadable .ipa files directly on iOS — locally, no PC. GPL-3.0, SwiftUI, essential companion for BHTwitter/Apollo and any deb-based tweak. v1.1.1 is the latest Release IPA.",
+      "iconURL": "https://github.com/sourcelocation.png",
+      "tintColor": "0A84FF",
+      "version": "1.1.1",
+      "versionDate": "2022-10-18T21:37:30Z",
+      "versionDescription": "DebToIPA v1.1.1 — convert .deb to .ipa on device. https://github.com/sourcelocation/DebToIPA/releases/tag/1.1.1",
+      "downloadURL": "https://github.com/sourcelocation/DebToIPA/releases/download/1.1.1/DebToIPA-1.1.1.ipa",
+      "size": 1238055,
+      "minOSVersion": "13.0",
+      "versions": [
+        {
+          "version": "1.1.1",
+          "date": "2022-10-18T21:37:30Z",
+          "localizedDescription": "Convert .deb to .ipa on-device — tweak installer helper.",
+          "downloadURL": "https://github.com/sourcelocation/DebToIPA/releases/download/1.1.1/DebToIPA-1.1.1.ipa",
+          "size": 1238055
+        }
+      ],
+      "screenshotURLs": []
+    },
+    {
+      "name": "Azula",
+      "bundleIdentifier": "com.paisseon.Azula",
+      "developerName": "Paisseon",
+      "subtitle": "Inject dylibs into IPAs on-device (SwiftUI + ElleKit)",
+      "localizedDescription": "Azula injects dynamic libraries (dylibs) into any IPA directly on iOS 14-16 / macOS 11-13 — the on-device alternative to Azule/Insert_dylib. AGPL-3.0, SwiftUI, handy for patching BHTwitter, Apollo, etc. v1.0.1 latest Release IPA (also has macOS dmg).",
+      "iconURL": "https://github.com/Paisseon.png",
+      "tintColor": "5E5CE6",
+      "version": "1.0.1",
+      "versionDate": "2023-03-16T20:43:47Z",
+      "versionDescription": "Azula v1.0.1 — inject dylibs into IPAs on device. https://github.com/Paisseon/Azula/releases/tag/v1.0.1",
+      "downloadURL": "https://github.com/Paisseon/Azula/releases/download/v1.0.1/Azula.ipa",
+      "size": 1532047,
+      "minOSVersion": "14.0",
+      "versions": [
+        {
+          "version": "1.0.1",
+          "date": "2023-03-16T20:43:47Z",
+          "localizedDescription": "Inject dylibs into IPAs on-device — tweak patcher.",
+          "downloadURL": "https://github.com/Paisseon/Azula/releases/download/v1.0.1/Azula.ipa",
+          "size": 1532047
+        }
+      ],
+      "screenshotURLs": []
     }
   ],
-  "news": []
+  "news": [],
+  "sourceMetadata": {
+    "lastCuratedBatch": "2026-11-24",
+    "addedCount": 17,
+    "addedFrom": "https://github.com/KB01111/Sideload-Sources",
+    "selectionPolicy": "Open-source or developer-published upstream release IPAs; exclude cracked, patched proprietary, and ad-removal builds."
+  }
 }
