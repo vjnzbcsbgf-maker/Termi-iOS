@@ -3,7 +3,7 @@
   "identifier": "com.mrxz.livecontainer.mega-source",
   "subtitle": "Combined iOS apps from multiple public AltStore-compatible sources",
   "description": "A combined catalogue assembled from upstream public repositories. App metadata and IPA download URLs are provided by their respective maintainers.",
-  "iconURL": "https://raw.githubusercontent.com/yattee/yattee/main/assets/yattee-icon-512.png",
+  "iconURL": "https://raw.githubusercontent.com/vjnzbcsbgf-maker/Termi-iOS/gh-pages/logo.svg",
   "website": "https://github.com/vjnzbcsbgf-maker/Termi-iOS",
   "apps": [
     {
