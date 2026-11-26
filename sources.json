@@ -850,42 +850,6 @@
       ]
     },
     {
-      "name": "Spotify (EeveeSpotify)",
-      "bundleIdentifier": "com.spotify.client",
-      "developerName": "skopevoj & IPA Vault",
-      "subtitle": "Spotify 9.1.98 with EeveeSpotify 7.0.0",
-      "localizedDescription": "Spotify 9.1.98 with EeveeSpotify 7.0.0",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Spotify-Icons/Spotify-AppStore-1024x1024.png",
-      "tintColor": "#1DB954",
-      "versions": [
-        {
-          "version": "9.1.98",
-          "date": "2026-11-09",
-          "localizedDescription": "IPA Vault build for Spotify (EeveeSpotify), version 9.1.98",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Spotify%209.1.98%20%28EeveeSpotify%207.0.0%29%20%5B%40ipavault%5D.ipa",
-          "size": 150978015
-        }
-      ]
-    },
-    {
-      "name": "Spotify (EeveeSpotify) (No Plugins)",
-      "bundleIdentifier": "com.spotify.client",
-      "developerName": "skopevoj & IPA Vault",
-      "subtitle": "Spotify 9.1.98 with EeveeSpotify 7.0.0 (No Plugins)",
-      "localizedDescription": "Spotify 9.1.98 with EeveeSpotify 7.0.0 (No Plugins)",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Spotify-Icons/Spotify-AppStore-1024x1024.png",
-      "tintColor": "#1DB954",
-      "versions": [
-        {
-          "version": "9.1.98",
-          "date": "2026-11-09",
-          "localizedDescription": "IPA Vault build for Spotify (EeveeSpotify) (No Plugins), version 9.1.98",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Spotify%209.1.98%20%28EeveeSpotify%207.0.0%29%20No%20Plugins.ipa",
-          "size": 147848840
-        }
-      ]
-    },
-    {
       "name": "Spotify (Vitrine)",
       "bundleIdentifier": "com.spotify.client",
       "developerName": "MyNameIsJeff & skopevoj & IPA Vault",
@@ -1458,42 +1422,6 @@
           "localizedDescription": "Omni for iOS, version 1.7-279.",
           "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Omni-1.7-279-iOS.ipa",
           "size": 25610625
-        }
-      ]
-    },
-    {
-      "name": "Spotify (EeveeSpotify + Pixie)",
-      "bundleIdentifier": "com.spotify.client",
-      "developerName": "skopevoj & IPA Vault",
-      "subtitle": "Spotify 9.1.92 with EeveeSpotify 7.0.0 + Pixie 1.4",
-      "localizedDescription": "Spotify 9.1.92 with EeveeSpotify 7.0.0 + Pixie 1.4",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Spotify-Icons/Spotify-AppStore-1024x1024.png",
-      "tintColor": "#1DB954",
-      "versions": [
-        {
-          "version": "9.1.92",
-          "date": "2026-11-08",
-          "localizedDescription": "IPA Vault build for Spotify (EeveeSpotify + Pixie), version 9.1.92",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Spotify%209.1.92%20%28EeveeSpotify%207.0.0%2BPixie%201.4%29%20%5B%40ipavault%5D.ipa",
-          "size": 145963307
-        }
-      ]
-    },
-    {
-      "name": "Spotify (EeveeSpotify + Pixie) (No Plugins)",
-      "bundleIdentifier": "com.spotify.client",
-      "developerName": "skopevoj & IPA Vault",
-      "subtitle": "Spotify 9.1.92 with EeveeSpotify 7.0.0 + Pixie 1.3 (No Plugins)",
-      "localizedDescription": "Spotify 9.1.92 with EeveeSpotify 7.0.0 + Pixie 1.3 (No Plugins)",
-      "iconURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/App%20Icons/Spotify-Icons/Spotify-AppStore-1024x1024.png",
-      "tintColor": "#1DB954",
-      "versions": [
-        {
-          "version": "9.1.92",
-          "date": "2026-10-26",
-          "localizedDescription": "IPA Vault build for Spotify (EeveeSpotify + Pixie) (No Plugins), version 9.1.92",
-          "downloadURL": "https://pub-dd800571175348b6a2745b3396360028.r2.dev/Spotify-9.1.92-EeveeSpotify-Pixie-No-Plugins.ipa",
-          "size": 146362211
         }
       ]
     },
@@ -3047,9 +2975,10 @@
   ],
   "news": [],
   "sourceMetadata": {
-    "lastCuratedBatch": "2026-11-24",
+    "lastCuratedBatch": "2026-11-26",
     "addedCount": 17,
     "addedFrom": "https://github.com/KB01111/Sideload-Sources",
-    "selectionPolicy": "Open-source or developer-published upstream release IPAs; exclude cracked, patched proprietary, and ad-removal builds."
+    "selectionPolicy": "Open-source or developer-published upstream release IPAs; exclude cracked, patched proprietary, and ad-removal builds.",
+    "lastFix": "Removed EeveeSpotify entries whose third-party IPA download URLs could not be verified; Spotube remains as the open-source music alternative."
   }
 }
